@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Começando com Off-Campus
 
-## Getting Started
+Guia rápido para iniciar o desenvolvimento do projeto.
 
-First, run the development server:
+## ⚡ Início Rápido (5 minutos)
+
+### 1. Instalar Dependências
+
+```bash
+npm install
+```
+
+### 2. Iniciar Servidor de Desenvolvimento
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Acessar a Aplicação
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Abra seu navegador e acesse: **[http://localhost:3000](http://localhost:3000)**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📦 Requisitos
 
-To learn more about Next.js, take a look at the following resources:
+- **Node.js** v18 ou superior
+- **npm**, yarn, pnpm ou bun
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Verifique sua versão:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+node --version
+npm --version
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎯 Scripts Principais
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Comando         | Descrição                                         |
+| --------------- | ------------------------------------------------- |
+| `npm run dev`   | Inicia servidor de desenvolvimento com hot-reload |
+| `npm run build` | Build otimizado para produção                     |
+| `npm start`     | Executa app em produção                           |
+| `npm run lint`  | Verifica código com ESLint                        |
+
+---
+
+## 📂 Estrutura Básica
+
+```
+src/app/
+├── page.js          → Página inicial
+├── layout.js        → Layout padrão
+├── globals.css      → Estilos globais
+└── page.module.css  → Estilos locais
+```
+
+---
+
+## 🔧 Próximos Passos
+
+- [ ] Explorar a estrutura do projeto
+- [ ] Customizar o layout em `src/app/layout.js`
+- [ ] Criar componentes em `src/components/`
+- [ ] Adicionar rotas em `src/app/`
+- [ ] Integrar banco de dados
+- [ ] Configurar autenticação
+- [ ] Implementar features de pagamento
+
+---
+
+## 📚 Documentação
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://react.dev)
+- [Vercel Deployment Guide](https://vercel.com/docs)
+
+---
+
+## 🐛 Troubleshooting
+
+### Porta 3000 já está em uso?
+
+```bash
+npm run dev -- -p 3001
+```
+
+### Limpar cache e reinstalar
+
+```bash
+rm -r node_modules package-lock.json
+npm install
+npm run dev
+```
+
+### Erro de módulos faltando
+
+```bash
+npm install
+```
+
+---
+
+## 💡 Dicas Úteis
+
+- Use `Ctrl + Shift + R` para hard refresh no navegador
+- ESLint foi configurado, rode `npm run lint` antes de commitar
+- Next.js usa file-based routing - crie arquivos em `src/app/`
+- Componentes podem ser criados em `src/components/`
+
+---
+
+**Precisa de ajuda?** Abra uma issue no repositório! 🎉
