@@ -5,6 +5,7 @@
   background: none;
   border: none;
   cursor: pointer;
+  position: relative;
 }
 
 .menubtn span {
@@ -21,12 +22,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 76px;
+    height: 100px;
     font-family: var(--font-road-rage);
     font-size: 30px;
     letter-spacing: 0.1em;
     padding: 50px;
-  
 }   
 
 
@@ -38,6 +38,62 @@
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   text-shadow: none;
+}
+
+
+
+.secondarymenu {
+    background-color:black;
+    display: flex;
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    font-family: var(--font-road-rage);
+    top: 74px;
+    right: -50px;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: height 0.8s ease-in;
+}
+
+.fontsecondmenu {
+    font-size: 40px;
+    letter-spacing: 0.1em;
+}
+
+.fontconfigsecondmenu {
+  font-size: 30px;
+  letter-spacing: 0.1em;
+}
+
+.likeicon {
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s ease;
+}
+
+.likeicon:hover {
+  transform: scale(1.2);
+}
+
+.inputpesquisa {
+  display:flex;
+  width: 300px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid white;
+}
+
+.caixapesquisa{
+  display:flex;
+  align-items: center;
+  width: 53%;
+  justify-content: space-between;
+}
+
+.agrupesquisa {
+  display:flex;
+  height: 30px;
 }
