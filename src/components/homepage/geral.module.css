@@ -1,0 +1,43 @@
+.menubtn {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menubtn span {
+  zoom: 1.5;
+  width: 30px;
+  height: 5px;
+  margin: 2px;
+  background: rgb(255, 253, 253);
+}
+
+.menuconfig{
+    background-color:black;
+    margin: 50px 90px 0px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 76px;
+    font-family: var(--font-road-rage);
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    padding: 50px;
+  
+}   
+
+
+.menutxtcolor {
+  font-family: var(--font-road-rage);
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  text-shadow: none;
+}
