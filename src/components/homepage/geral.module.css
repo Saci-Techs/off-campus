@@ -55,6 +55,7 @@
     flex-direction: column;
     justify-content: space-around;
     transition: height 0.8s ease-in;
+    overflow: hidden;
 }
 
 .fontsecondmenu {
@@ -96,4 +97,70 @@
 .agrupesquisa {
   display:flex;
   height: 30px;
+}
+
+.footer {
+  background-color: #201914;
+  display: flex;
+  height: 12vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: space-between;
+}
+
+.fontfooter {
+  font-family: var(--font-geist-sans);
+  font-size: 13px;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.imagecard {
+  height: 550px;
+  width: 450px;
+  position: relative;
+  border: white solid 20px;
+}
+
+.cardbtnbackground {
+  background-color: white;
+  padding: 10px 20px;
+  overflow: hidden;
+}
+
+.cardbtn {
+  color: black;
+  background-color: white;
+  height: 60px;
+  width: 437px;
+  border: black solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fontlermais {
+  font-family: var(--font-road-rage);
+  font-size: 25px;
+}
+
+.cardsconfig {
+  display:flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
