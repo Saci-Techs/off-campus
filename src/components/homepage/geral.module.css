@@ -80,13 +80,6 @@
   transform: scale(1.2);
 }
 
-.inputpesquisa {
-  display:flex;
-  width: 300px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 3px solid white;
-}
 
 .caixapesquisa{
   display:flex;
@@ -198,4 +191,23 @@
 
 .slideleftbutton {
   left: 17vw;
+}
+
+
+.loginbtn {
+  height: 5vh;
+  width: 5vw;
+  background-color: black;
+  border: none;
+}
+
+.logintext {
+  font-family: var(--font-road-rage);
+  font-size:35px;
+}
+
+.logindiv {
+  width: 5vw;
+  display: flex;
+  justify-content: center;
 }
