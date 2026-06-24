@@ -16,19 +16,18 @@
   background: rgb(255, 253, 253);
 }
 
-.menuconfig{
-    background-color:black;
-    margin: 50px 90px 0px 90px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    font-family: var(--font-road-rage);
-    font-size: 30px;
-    letter-spacing: 0.1em;
-    padding: 50px;
-}   
-
+.menuconfig {
+  background-color: black;
+  margin: 50px 90px 0px 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  font-family: var(--font-road-rage);
+  font-size: 30px;
+  letter-spacing: 0.1em;
+  padding: 50px;
+}
 
 .menutxtcolor {
   font-family: var(--font-road-rage);
@@ -41,27 +40,25 @@
   text-shadow: none;
 }
 
-
-
 .secondarymenu {
-    background-color:black;
-    display: flex;
-    position: absolute;
-    width: 200px;
-    height: 250px;
-    font-family: var(--font-road-rage);
-    top: 74px;
-    right: -50px;
-    flex-direction: column;
-    justify-content: space-around;
-    transition: height 0.8s ease-in;
-    overflow: hidden;
-    z-index: 1000;
+  background-color: black;
+  display: flex;
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  font-family: var(--font-road-rage);
+  top: 74px;
+  right: -50px;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: height 0.8s ease-in;
+  overflow: hidden;
+  z-index: 1000;
 }
 
 .fontsecondmenu {
-    font-size: 40px;
-    letter-spacing: 0.1em;
+  font-size: 40px;
+  letter-spacing: 0.1em;
 }
 
 .fontconfigsecondmenu {
@@ -80,16 +77,22 @@
   transform: scale(1.2);
 }
 
-
-.caixapesquisa{
-  display:flex;
+.inputpesquisa {
+  display: flex;
+  width: 300px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid white;
+}
+.caixapesquisa {
+  display: flex;
   align-items: center;
   width: 53%;
   justify-content: space-between;
 }
 
 .agrupesquisa {
-  display:flex;
+  display: flex;
   height: 30px;
 }
 
@@ -153,7 +156,7 @@
 }
 
 .cardsconfig {
-  display:flex;
+  display: flex;
   gap: 44px;
   flex-wrap: wrap;
   justify-content: center;
@@ -164,7 +167,7 @@
   height: 60vh;
   width: 100vw;
   justify-content: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
 }
 
@@ -175,24 +178,24 @@
   position: relative;
   height: 45vh;
   width: 45vw;
+  border: 1rem solid #f2e1b0;
 }
 
-.slideleftbutton, .sliderightbutton{
-  position:absolute;
+.slideleftbutton,
+.sliderightbutton {
+  position: absolute;
   height: 45vh;
-  width: 33vw;
+  width: 50vw;
   z-index: 1001;
-
 }
 
 .sliderightbutton {
-  right: 17vw;
+  right: 0;
 }
 
 .slideleftbutton {
-  left: 17vw;
+  left: 0;
 }
-
 
 .loginbtn {
   height: 5vh;
@@ -203,11 +206,59 @@
 
 .logintext {
   font-family: var(--font-road-rage);
-  font-size:35px;
+  font-size: 35px;
 }
 
 .logindiv {
   width: 5vw;
   display: flex;
   justify-content: center;
+}
+
+.Fita_Adesiva {
+  background-color: #10216c;
+  width: 1.5rem;
+  height: 6rem;
+  position: absolute;
+  z-index: 999; /*Menor apenas que a div de click*/
+}
+
+.Fita_Adesiva_Esquerda_Topo {
+  left: 27.5vw;
+  top: -2rem;
+  transform: rotate(30deg);
+}
+.Fita_Adesiva_Direita_Topo {
+  right: 27.5vw;
+  top: -2rem;
+  transform: rotate(140deg);
+}
+
+.Fita_Adesiva_Esquerda_Baixo {
+  left: 27.5vw;
+  bottom: 6.5rem;
+  transform: rotate(140deg);
+}
+.Fita_Adesiva_Direita_Baixo {
+  right: 27.5vw;
+  bottom: 6.5rem;
+  transform: rotate(30deg);
+}
+
+.Div_Imagem_Anterior,
+.Div_Imagem_Posterior {
+  position: absolute;
+  width: 35vw;
+  height: 35vh;
+  z-index: -1;
+  top: 3rem;
+  opacity: 0.5;
+}
+.Div_Imagem_Anterior {
+  position: absolute;
+  left: 6rem;
+}
+.Div_Imagem_Posterior {
+  position: absolute;
+  right: 6rem;
 }
