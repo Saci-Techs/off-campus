@@ -14,8 +14,7 @@ export default function Cardblueprint({url}) {
            <div className={styles.cardbtnbackground}>
             <button className={styles.cardbtn}> <p className={styles.fontlermais}>Ler <br/>
              Mais  </p> <p className={styles.fontlermais}> + </p></button>
-          </div>
-            
+          </div> 
         </div>
     );
 }

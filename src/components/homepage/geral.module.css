@@ -165,3 +165,37 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.slidediv {
+  display: flex;
+  height: 60vh;
+  width: 100vw;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.slideshow {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  position: relative;
+  height: 45vh;
+  width: 45vw;
+}
+
+.slideleftbutton, .sliderightbutton{
+  position:absolute;
+  height: 45vh;
+  width: 33vw;
+  z-index: 1001;
+
+}
+
+.sliderightbutton {
+  right: 17vw;
+}
+
+.slideleftbutton {
+  left: 17vw;
+}
